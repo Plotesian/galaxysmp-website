@@ -6,48 +6,72 @@
     <title>GalaxySMP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/assets/galaxy.png" type="image/x-icon">
+    <script src="playercount.js"></script>
 </head>
 <body>
     <div class="menu">
         <a href="/" class="hover-underline-animation menu-element"><img src="/assets/galaxy-noback.png" style="width: 70px;"></a>
-        <a href="/howtojoin.html" class="hover-underline-animation menu-element">Comment rejoindre ?</a>
-        <a href="/faq.html" class="hover-underline-animation menu-element">FAQ</a>
-        <a href="https://discord.gg/S2wEps9kUZ" target="_blank" class="menu-element">
+        <a href="https://discord.gg/S2wEps9kUZ" target="_blank">
             <img src="/assets/discord.png" class="logo-menu">
         </a>
     </div>
     <div class="container">
-        <div class="join-container">
-            <img src="/assets/galaxy.png" class="image-galaxy">
-            <div class="join-container-side">
-                <h1 class="title-galaxy">
-                    Rejoins le <span class="galaxysmp-gradient">GalaxySMP</span> dès maintenant !
-                </h1>
-                <a href="howtojoin.html" class="join-galaxy">Rejoindre l'aventure</a>
+        <div class="title-galaxy-container">
+            <h1 class="title-galaxy">
+                Rejoins le <span class="galaxysmp-gradient">GalaxySMP</span> dès maintenant ! 🪐
+            </h1>
+        </div>
+        <div class="copy-text-container">
+            <div class="copy-text" id="copyBtn">
+                galaxysmp.ovh
+                <img src="/assets/copy.svg" class="copy-svg" id="copyIcon">
             </div>
         </div>
-        <div class="down-arrow-container">
-            <div class="down-arrow"></div>
-        </div>
-        <div class="presentation presentation-1">
-            <div class="presentation-text-side presentation-left">
-                <h1 class="presentation-title">Vole les vies des autres joueurs</h1>
-                <div class="presentation-bio">Avec un système style LifeSteal, vole les cœurs de autres joueurs en les tuant</div>
-            </div>
-            <img src="/assets/heart.png" class="presentation-image" style="image-rendering: pixelated;">
-        </div>
-        <div class="presentation presentation-2">
-            <img src="/assets/money.png" class="presentation-image presentation-left" style="image-rendering: pixelated;">
-            <div class="presentation-text-side">
-                <h1 class="presentation-title">Gagne de l'argent</h1>
-                <div class="presentation-bio">Commence à gagner de l'argent en vendant des objets, puis dépense le dans le magasin ou fais des échanges avec les autres joueurs.</div>
+        <div class="player-count-container">
+            <div class="player-count">
+                <div class="green-circle"></div>
+                <span id="player-count"></span>
+                joueurs en ligne
             </div>
         </div>
+        <div class="cards">
+          <div class="card">
+            <span class="icon">⚔️</span>
+            <h3>Lifesteal</h3>
+            <p>Vole des coeurs aux autre joueurs en les tuant.</p>
+          </div>
+          <div class="card">
+            <span class="icon">👥</span>
+            <h3>Équipes</h3>
+            <p>Forme ton équipe, coordonne-toi et affronte le monde ensemble.</p>
+          </div>
+          <div class="card">
+            <span class="icon">💰</span>
+            <h3>Économie</h3>
+            <p>Un système économique complet pour échanger, commercer et progresser.</p>
+          </div>
+          <div class="card">
+            <span class="icon">🎁</span>
+            <h3>Kit de départ</h3>
+            <p>Reçois automatiquement un kit lors de ta première connexion sur le serveur.</p>
+          </div>
+          <div class="card">
+            <span class="icon">🛡️</span>
+            <h3>Staff actif</h3>
+            <p>Une équipe de modération présente et réactive pour garantir une bonne expérience.</p>
+          </div>
+          <div class="card">
+            <span class="icon">💬</span>
+            <h3>Discord</h3>
+            <p>Rejoins la communauté avec le lien en haut de la page.</p>
+          </div>
+        </div>
+
     </div>
     <div class="footer">
         <div class="footer-element">Site fait par Plotesian</div>
         <a href="/legal/mentions-legales.html" class="footer-element hover-underline-animation">Mentions légales</a>
+        <a href="/faq.html" class="hover-underline-animation footer-element">FAQ</a>
     </div>
-    <script src="/scroll.js" defer></script>
 </body>
 </html>
