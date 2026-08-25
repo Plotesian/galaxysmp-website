@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.scrollY >= 200) {
       titleEl1.classList.add('presentation-scrolled');
     }
-    if (window.scrollY >= window.innerHeight * 0.3 + 200) {
+    if (window.scrollY >= window.innerHeight * 0.2 + 500) {
       titleEl2.classList.add('presentation-scrolled');
     }
     if (window.scrollY <= window.innerHeight * 0.01) {
